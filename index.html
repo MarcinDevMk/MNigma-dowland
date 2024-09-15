@@ -3,33 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pobierz Aplikację</title>
+    <title>MNIGMA</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
             text-align: center;
-            padding: 50px;
         }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 16px;
-            color: #fff;
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .download-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .download-column {
+            margin: 0 20px;
+        }
+
+        .download-section {
+            margin: 20px 0;
+            width: 250px;
+        }
+
+        .download-section button {
             background-color: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
+            color: white;
             border: none;
+            padding: 10px 20px;
+            margin: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
         }
-        .button:hover {
+
+        .download-section button:hover {
             background-color: #0056b3;
         }
+
+        .video-link {
+            font-size: 14px;
+            text-decoration: underline;
+            color: #007BFF;
+        }
+
+        .video-link:hover {
+            color: #0056b3;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Pobierz Aplikację</h1>
-    <p>Kliknij poniższe przyciski, aby pobrać odpowiednią wersję aplikacji:</p>
-    <a href="https://github.com/MarcinDevMk/MNigma-dowland/releases/tag/v0.1-Beta" class="button" target="_blank">BETA MacOS</a>
-    <a href="https://github.com/MarcinDevMk/MNigma-dowland/releases/tag/v0.1-Beta" class="button" target="_blank">BETA Windows</a>
+
+<header>
+    <h1>MNIGMA</h1>
+</header>
+
+<section>
+    <p>MNIGMA to bezpieczna aplikacja szyfrująca, zapewniająca prywatność Twoich danych. Aplikacja jest wolna od wirusów i bezpieczna w użyciu.</p>
+    <p>Autor: Marcin (Nicram)</p>
+    <p>Aplikacja pozwala na szyfrowanie wiadomości, które mogą być bezpiecznie przechowywane lub wysyłane. Dzięki zastosowaniu zaawansowanej kryptografii, Twoje dane są chronione na najwyższym poziomie.</p>
+</section>
+
+<section>
+    <h2>Pobierz MNIGMA</h2>
+
+    <div class="download-container">
+        <!-- Kolumna Windows -->
+        <div class="download-column">
+            <h2>Windows</h2>
+            <div class="download-section">
+                <button onclick="window.location.href='https://github.com/MarcinDevMk/MNigma-dowland/releases/tag/v0.1-Beta'">Pobierz na Windows-v0.1 BETA</button>
+            </div>
+
+            <div class="download-section">
+                <button onclick="window.location.href='https://github.com/MarcinDevMk/MNigma-dowland/releases/tag/v1.0.0'">Pobierz na Windows v1.0.0</button>
+                <a href="link_do_filmu_2" class="video-link">Zobacz film instruktażowy</a>
+            </div>
+
+            <div class="download-section">
+                <button onclick="window.location.href='link_do_windows_3'">Pobierz na Windows (Wersja 3)</button>
+                <a href="link_do_filmu_3" class="video-link">Zobacz film instruktażowy</a>
+            </div>
+
+            <div class="download-section">
+                <button onclick="window.location.href='link_do_windows_4'">Pobierz na Windows (Wersja 4)</button>
+                <a href="link_do_filmu_4" class="video-link">Zobacz film instruktażowy</a>
+            </div>
+        </div>
+
+        <!-- Kolumna MacOS -->
+        <div class="download-column">
+            <h2>MacOS</h2>
+            <div class="download-section">
+                <button onclick="window.location.href='https://github.com/MarcinDevMk/MNigma-dowland/releases/tag/v0.1-Beta'">Pobierz na MacOS v0.1 BETA</button>
+            </div>
+
+            <div class="download-section">
+                <button onclick="window.location.href='https://github.com/MarcinDevMk/MNigma-dowland/releases/tag/v1.0.0'">Pobierz na MacOS v1.0.0</button>
+            </div>
+
+            <div class="download-section">
+                <button onclick="window.location.href='link_do_macos_3'">Pobierz na MacOS (Wersja 3)</button>
+            </div>
+
+            <div class="download-section">
+                <button onclick="window.location.href='link_do_macos_4'">Pobierz na MacOS (Wersja 4)</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 </body>
 </html>
